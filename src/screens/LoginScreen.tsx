@@ -18,9 +18,9 @@ const LoginScreen: FC<LoginScreenProps> = () => {
   const { top: paddingTop } = useSafeAreaInsets();
   const dispatch = useDispatch();
 
-  const [user, setUser] = useState('Rodrigo');
-  const [email, setEmail] = useState('rlopez2512@gmail.com');
-  const [password, setPassword] = useState('12345678');
+  const [user, setUser] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleClick = () => {
     if (user.length === 0 || email.length === 0 || password.length === 0)
